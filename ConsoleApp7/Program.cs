@@ -11,7 +11,7 @@ namespace ConsoleApp7
             var parser = new DefinitionParser();
             var elements = parser.ParseFile("./MyCustomLabel.splf");
 
-            var builder = new ZplBuilder(600, 4, 6);
+            var builder = new ZplBuilder(203, 4, 6);
 
             string zpl = builder.Build(elements);
 

@@ -33,13 +33,11 @@ namespace ConsoleApp7
             switch (node.Name)
             {
                 case "Barcode":
-                    float xPos = float.Parse(node.GetAttribute("xPos"));
-                    float yPos = float.Parse(node.GetAttribute("yPos"));
-                    float height = float.Parse(node.GetAttribute("height"));
-                    float widthFactor = float.Parse(node.GetAttribute("widthFactor"));
-                    string content = node.GetAttribute("content");
-                    return new Barcode(xPos, yPos, height, widthFactor, content);
-
+                    return new Barcode(node);
+                case "Box":
+                    return new Box(node);
+                case "Text":
+                    return new Text(node);
                 default:
                     return null;
             }

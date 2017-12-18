@@ -1,29 +1,21 @@
-﻿namespace ConsoleApp7.Elements
+﻿using System.Xml;
+
+namespace ConsoleApp7.Elements
 {
     public class Barcode : Element
     {
-        public float XPos { get; }
+        public float Height { get; set; }
 
-        public float YPos { get; }
+        public float BarWidth { get; set; }
 
-        public float Height { get; }
+        public string Content { get; set; }
 
-        public float BarWidthFactor { get; }
-
-        public string Content { get; }
-
-        public Barcode(
-            float xPos,
-            float yPos,
-            float height,
-            float barWidthFactor,
-            string content)
+        public Barcode(XmlTextReader node)
+            : base(node)
         {
-            this.XPos = xPos;
-            this.YPos = yPos;
-            this.Height = height;
-            this.BarWidthFactor = barWidthFactor;
-            this.Content = content;
+            this.Height = float.Parse(node.GetAttribute("height"));
+            this.BarWidth = float.Parse(node.GetAttribute("barWidth"));
+            this.Content = node.GetAttribute("content");
         }
     }
 }

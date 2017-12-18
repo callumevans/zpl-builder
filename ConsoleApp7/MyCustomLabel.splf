@@ -1,3 +1,59 @@
 ﻿<Label>
-  <Barcode xPos="0.3" yPos="3" height="1" widthFactor="0.01" content="0BS8 3TQ1 5504 4170 0151 3812 826J" />
+  <!-- Grid Lines For Top Section -->
+  <Box xPos="0" yPos="5.08" width="101.6" height="0.254" thickness="0.254" />
+  <Box xPos="0" yPos="31.75" width="62.992" height="0.254" thickness="0.254" />
+  <Box xPos="0" yPos="46.99" width="101.6" height="0.254" thickness="1" />
+
+  <Box xPos="45.974" yPos="31.75" width="0.254" height="15.24" thickness="0.254" />
+  <Box xPos="62.992" yPos="5.08" width="0.254" height="42.418" thickness="0.254" />
+  <Box xPos="85.852" yPos="5.08" width="0.254" height="42.418" thickness="0.254" />
+
+  <!-- DPD Logo -->
+  <Text xPos="93" yPos="21" width="150" content="DPD" size="6" style="bold" orientation="90" />
+  <Text xPos="89" yPos="15" width="150" content="www.dpd.co.uk" size="4" style="bold" orientation="90" />
+
+  <!-- Sender's Details -->
+  <Text xPos="82.5" yPos="27" width="150" content="Account:" size="2.4" orientation="90" align="left" />
+  <Text xPos="82.5" yPos="37" width="150" content="123456" size="2.4" style="bold" orientation="90" align="left" />
+
+  <Text xPos="82.5" yPos="6.5" width="150" content="Sender:" size="2.4" orientation="90" align="left" />
+  <Text xPos="80" yPos="6.5" width="150" content="Miss Anon Ymous" size="2.4" orientation="90" style="bold" align="left" />
+  <Text xPos="77.5" yPos="6.5" width="150" content="Fred &amp; Smith" size="2.4" orientation="90" style="bold" align="left" />
+  <Text xPos="75" yPos="6.5" width="150" content="LD Centre" size="2.4" orientation="90" style="bold" align="left" />
+  <Text xPos="72.5" yPos="6.5" width="150" content="Darwen BB3 1EX" size="2.4" orientation="90" style="bold" align="left" />
+  <Text xPos="70" yPos="6.5" width="150" content="United Kingdom" size="2.4" orientation="90" style="bold" align="left" />
+  
+  <Text xPos="66.5" yPos="6.5" width="150" content="Phone:" size="2.4" orientation="90" align="left" />
+  <Text xPos="66.5" yPos="18" width="150" content="01254 111 222" size="2.4" orientation="90" style="bold" align="left" />
+
+  <Text xPos="64" yPos="6.5" width="150" content="Reference:" size="2.4" orientation="90" align="left" />
+  <Text xPos="64" yPos="18" width="150" content="EP2641218" size="2.4" orientation="90" style="bold" align="left" />
+
+  <!-- Barcode -->
+  <Barcode when="203" height="24.892" yPos="72" xPos="8.89" barWidth="0.3302" content="0BS83TQ15>504417001513812826J" />
+  <Barcode when="152|300|600" height="0.98" yPos="99.06" xPos="7.366" barWidth="0.3302" content="0BS83TQ15>504417001513812826J" />
+  
+  <!-- Delivery Address -->
+  <Text xPos="2" yPos="7" width="150" content="Bill Bailey" size="3" style="bold" align="left" />
+  <Text xPos="2" yPos="11" width="150" content="Fred &amp; Smith Ltd Customer Service" size="3" style="bold" align="left" />
+  <Text xPos="2" yPos="15" width="150" content="Lancashire" size="3" style="bold" align="left" />
+  <Text xPos="2" yPos="19" width="150" content="Darwen" size="3" style="bold" align="left" />
+  <Text xPos="2" yPos="23" width="150" content="BB3 1EX" size="3" style="bold" align="left" />
+  <Text xPos="2" yPos="27" width="150" content="United Kingdom" size="3" style="bold" align="left" />
+
+  <!-- Delivery Details -->
+  <Text xPos="2" yPos="34" width="150" content="Contact:" size="2.4" align="left" />
+  <Text xPos="11" yPos="34" width="150" content="Bill Bailey" size="2.4" style="bold" align="left" />
+
+  <Text xPos="2" yPos="38" width="150" content="Phone:" size="2.4" align="left" />
+  <Text xPos="11" yPos="38" width="150" content="01254 666 555" size="2.4" style="bold" align="left" />
+
+  <Text xPos="2" yPos="42" width="150" content="Info:" size="2.4" align="left" />
+  <Text xPos="11" yPos="42" width="150" content="Bag o' Drugs" size="2.4" style="bold" align="left" />
+
+  <!-- Parcel Details -->
+  <Text xPos="62" yPos="33" width="150" content="Packages" size="2.4" align="right" />
+  <Text xPos="62" yPos="36" width="150" content="1 of 1" size="2.4" align="right" style="bold" />
+  <Text xPos="62" yPos="40" width="150" content="Weight" size="2.4" align="right" />
+  <Text xPos="62" yPos="43" width="150" content="0.73 kg" size="2.4" align="right" style="bold" />
 </Label>
